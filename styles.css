@@ -8,12 +8,14 @@
 body {
     line-height: 1.6;
     color: #333;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f6fa;
 }
 
 /* Header Styles */
 header {
-    background: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: #2c3e50;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     position: fixed;
     width: 100%;
     top: 0;
@@ -43,9 +45,10 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #2c3e50;
+    color: white;
     font-weight: 500;
     transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
 }
 
 .nav-links a:hover {
@@ -68,6 +71,17 @@ nav {
     text-align: center;
     color: white;
     padding: 0 1rem;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .hero-content h1 {
@@ -98,7 +112,7 @@ nav {
 /* Services Section */
 .services {
     padding: 5rem 1rem;
-    background: #f9f9f9;
+    background: #ffffff;
 }
 
 .services h2 {
@@ -116,12 +130,13 @@ nav {
 }
 
 .service-card {
-    background: white;
+    background: #f8f9fa;
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.3s ease;
+    border: 1px solid #e9ecef;
 }
 
 .service-card:hover {
@@ -131,6 +146,7 @@ nav {
 /* About Section */
 .about {
     padding: 5rem 1rem;
+    background: #f8f9fa;
 }
 
 .about h2 {
@@ -147,7 +163,7 @@ nav {
 /* Contact Section */
 .contact {
     padding: 5rem 1rem;
-    background: #f9f9f9;
+    background: #ffffff;
 }
 
 .contact h2 {
@@ -157,8 +173,12 @@ nav {
 }
 
 .contact-container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 #contact-form {
