@@ -371,7 +371,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize menu with all products
     const menuGrid = document.querySelector('#menu .product-grid');
     if (menuGrid) {
-        displayProducts(products, menuGrid);
+        // displayProducts(products, menuGrid);
     }
     
     // Set up navigation links
@@ -415,7 +415,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     // Display products on page load
-    displayProducts();
+    // displayProducts();
     
     // Set up modal close button
     const modal = document.getElementById('productModal');
